@@ -5,4 +5,5 @@ COPY ./ /engbobr
 WORKDIR /engbobr
 RUN python -m pip install -r requirements.txt
 USER user
+EXPOSE 443
 CMD ["sh", "-c", "python3 main.py"]
